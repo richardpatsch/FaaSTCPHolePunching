@@ -46,7 +46,7 @@ def get_timestamp():
     # Fetch the current UTC time
     now_utc = datetime.datetime.utcnow()
     # Format the timestamp with microseconds
-    formatted_timestamp_with_ms = now_utc.strftime('%H:%M:%S.%f')[:-3]  # Retains microsecond precision
+    formatted_timestamp_with_ms = now_utc.strftime('%Y-%m-%d %H:%M:%S.%f')  # Retains microsecond precision
     return formatted_timestamp_with_ms
 
 
